@@ -1,0 +1,546 @@
+/* Inicio del reset */
+  * {
+      margin: 0;
+      padding: 0;
+  }
+/* Final del reset */
+  
+// ----------------------- 📘Media query PC📘 -----------------------
+@media screen and (min-width: 1200px) { 
+  /* ✅ Inicio de grid-containerREG ✅  */
+  .grid-containerREG {
+      height: 100vh;
+      display: grid;
+      grid-template-areas: 
+      " header header header"
+      " mainREG mainREG mainREG"
+      " footer footer footer";
+      grid-template-rows: 90px 609px 90px;
+      grid-template-columns: 200px;
+  
+// ---------------🔷🔷Header🔷🔷---------------
+header{
+    grid-area: header;
+    background-image: url("../Imagenes/HeaderAirTravel.png");
+    @include Bg;
+    display: grid;
+    grid-template-areas: " ColLogo SpHeader ColEnlaces";
+    grid-template-columns: 1fr 400px 3fr;
+
+    .ColLogo{
+        grid-area: ColLogo;
+        background-color: map-get($ParteHeader, ColLogo);
+    }
+
+    .SpHeader{
+        grid-area: SpHeader;
+        background-color: map-get($ParteHeader, SpHeader);
+    }
+
+    .ColEnlaces{
+        grid-area: ColEnlaces;
+        background-color: map-get($ParteHeader, ColEnlaces);
+
+/* Inicio elementos de menú */
+.Enlaces {
+	display: flex;
+	justify-content: space-evenly;
+  
+  .ElementLi {
+	display: inline;
+	padding: 15px;
+  
+  .Link{
+  color: map-get($ColoresLink, TextLink);
+  text-decoration: none;
+  font-size: 27px;
+  position: relative;
+  bottom: 1px;
+  top: 10px;
+  @include TextLink;
+  }
+  
+  .Link:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: map-get($ColoresLink, AnmLink);
+	/*animacion de derecha a izquierda*/
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .Link:hover:after {
+	/*animacion de izquierda a derecha*/
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+}
+}
+/* Final elementos de menú */
+    }
+}
+// ---------------🔷🔷Header🔷🔷---------------
+
+  .mainREG{
+    grid-area: mainREG;
+    background-image: url("../Imagenes/FondoRegistrarse/FondoRegistrarse.png");
+    @include Bg;
+  }
+  
+  footer{
+    grid-area: footer; 
+    background-image: url("../Imagenes/FooterAirTravel.png");
+    @include Bg;
+  } 
+  }
+  /* ✅ Final de grid-containerREG ✅  */
+}
+// ----------------------- 📘Media query PC📘 -----------------------
+
+
+// ----------------------- 📘Media query PC2📘 -----------------------
+@media screen and (min-width: 768px) { 
+     /* ✅ Inicio de grid-containerREG ✅  */
+  .grid-containerREG {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    " header header header"
+    " mainREG mainREG mainREG"
+    " footer footer footer";
+    grid-template-rows: 90px 609px 90px;
+    grid-template-columns: 200px;
+
+// ---------------🔷🔷Header🔷🔷---------------
+header{
+  grid-area: header;
+  background-image: url("../Imagenes/HeaderAirTravel.png");
+  @include Bg;
+  display: grid;
+  grid-template-areas: " ColLogo SpHeader ColEnlaces";
+  grid-template-columns: 1fr 400px 3fr;
+
+  .ColLogo{
+      grid-area: ColLogo;
+      background-color: map-get($ParteHeader, ColLogo);
+  }
+
+  .SpHeader{
+      grid-area: SpHeader;
+      background-color: map-get($ParteHeader, SpHeader);
+  }
+
+  .ColEnlaces{
+      grid-area: ColEnlaces;
+      background-color: map-get($ParteHeader, ColEnlaces);
+
+/* Inicio elementos de menú */
+.Enlaces {
+display: flex;
+justify-content: space-evenly;
+
+.ElementLi {
+display: inline;
+padding: 15px;
+
+.Link{
+color: map-get($ColoresLink, TextLink);
+text-decoration: none;
+font-size: 27px;
+position: relative;
+bottom: 1px;
+top: 10px;
+@include TextLink;
+}
+
+.Link:after {
+content: "";
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 100%;
+background: map-get($ColoresLink, AnmLink);
+/*animacion de derecha a izquierda*/
+transform-origin: right;
+transform: scaleX(0);
+transition: transform 0.2s ease-in-out;
+}
+
+.Link:hover:after {
+/*animacion de izquierda a derecha*/
+transform-origin: left;
+transform: scaleX(1);
+}
+}
+}
+/* Final elementos de menú */
+  }
+}
+// ---------------🔷🔷Header🔷🔷---------------
+
+.mainREG{
+  grid-area: mainREG;
+  background-image: url("../Imagenes/FondoRegistrarse/FondoRegistrarse.png");
+  @include Bg;
+}
+
+footer{
+  grid-area: footer; 
+  background-image: url("../Imagenes/FooterAirTravel.png");
+  @include Bg;
+} 
+}
+/* ✅ Final de grid-containerREG ✅  */
+  }
+  // ----------------------- 📘Media query PC2📘 -----------------------
+
+
+// ----------------------- 📕Media query Mobile📕 -----------------------
+@media screen and (max-width: 768px) { 
+    /* ✅ Inicio de grid-containerREG ✅  */
+    .grid-containerREG {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        " header header header"
+        " mainREG mainREG mainREG"
+        " footer footer footer";
+        grid-template-rows: 120px 569px 90px;
+        grid-template-columns: 200px;
+    
+  // ---------------🔷🔷Header🔷🔷---------------
+  header{
+      grid-area: header;
+      background-image: url("../Imagenes/HeaderAirTravelMob.png");
+      @include Bg;
+      display: grid;
+      grid-template-areas: 
+      " ColLogo" 
+      " ColEnlaces";
+      grid-template-rows: 3fr 2fr;
+  
+      .ColLogo{
+          grid-area: ColLogo;
+          background-color: map-get($ParteHeader, ColLogo);
+      }
+  
+    .ColEnlaces{
+        grid-area: ColEnlaces;
+        background-color: map-get($ParteHeader, ColEnlaces);
+        display: grid;
+        grid-template-areas: 
+        " SpLink SpLink2 SpLink3";
+        grid-template-columns: 1fr 22fr 1fr;
+
+        .SpLink{
+            grid-area: SpLink;
+            background-color: map-get($ParteHeaderMob, SpLink);
+        }
+
+        .SpLink2{
+            grid-area: SpLink2;
+            background-color: map-get($ParteHeaderMob, SpLink2);
+
+            /* Inicio elementos de menú */
+.Enlaces {
+	display: flex;
+	justify-content: space-evenly;
+  
+  .ElementLi {
+	display: inline;
+  
+  .Link{
+  color: map-get($ColoresLink, TextLink);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  top: 12px;
+  @include TextLink;
+  }
+  
+  .Link:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: map-get($ColoresLink, AnmLink);
+	/*animacion de derecha a izquierda*/
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .Link:hover:after {
+	/*animacion de izquierda a derecha*/
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+}
+}
+/* Final elementos de menú */
+        }
+
+        .SpLink3{
+            grid-area: SpLink3;
+            background-color: map-get($ParteHeaderMob, SpLink3);
+        }
+    }
+  }
+  // ---------------🔷🔷Header🔷🔷---------------
+  
+    .mainREG{
+        grid-area: mainREG;
+      background-image: url("../Imagenes/FondoRegistrarse/FondoRegistrarse.png");
+      @include Bg;
+    }
+    
+    footer{
+        grid-area: footer; 
+        background-image: url("../Imagenes/FooterAirTravelMob.png");
+      @include Bg;
+    } 
+    }
+    /* ✅ Final de grid-containerREG ✅  */
+  }
+  // ----------------------- 📕Media query Mobile📕 -----------------------
+
+
+
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+@media screen and (max-width: 576px) { 
+    /* ✅ Inicio de grid-containerREG ✅  */
+    .grid-containerREG {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        " header header header"
+        " mainREG mainREG mainREG"
+        " footer footer footer";
+        grid-template-rows: 120px 569px 90px;
+        grid-template-columns: 200px;
+    
+  // ---------------🔷🔷Header🔷🔷---------------
+  header{
+      grid-area: header;
+      background-image: url("../Imagenes/HeaderAirTravelMob.png");
+      @include Bg;
+      display: grid;
+      grid-template-areas: 
+      " ColLogo" 
+      " ColEnlaces";
+      grid-template-rows: 3fr 2fr;
+  
+      .ColLogo{
+          grid-area: ColLogo;
+          background-color: map-get($ParteHeader, ColLogo);
+      }
+  
+    .ColEnlaces{
+        grid-area: ColEnlaces;
+        background-color: map-get($ParteHeader, ColEnlaces);
+        display: grid;
+        grid-template-areas: 
+        " SpLink SpLink2 SpLink3";
+        grid-template-columns: 1fr 22fr 1fr;
+
+        .SpLink{
+            grid-area: SpLink;
+            background-color: map-get($ParteHeaderMob, SpLink);
+        }
+
+        .SpLink2{
+            grid-area: SpLink2;
+            background-color: map-get($ParteHeaderMob, SpLink2);
+
+            /* Inicio elementos de menú */
+.Enlaces {
+	display: flex;
+	justify-content: space-evenly;
+  
+  .ElementLi {
+	display: inline;
+  
+  .Link{
+  color: map-get($ColoresLink, TextLink);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  top: 12px;
+  @include TextLink;
+  }
+  
+  .Link:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: map-get($ColoresLink, AnmLink);
+	/*animacion de derecha a izquierda*/
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .Link:hover:after {
+	/*animacion de izquierda a derecha*/
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+}
+}
+/* Final elementos de menú */
+        }
+
+        .SpLink3{
+            grid-area: SpLink3;
+            background-color: map-get($ParteHeaderMob, SpLink3);
+        }
+    }
+  }
+  // ---------------🔷🔷Header🔷🔷---------------
+  
+    .mainREG{
+        grid-area: mainREG;
+      background-image: url("../Imagenes/FondoRegistrarse/FondoRegistrarse.png");
+      @include Bg;
+    }
+    
+    footer{
+        grid-area: footer; 
+        background-image: url("../Imagenes/FooterAirTravelMob.png");
+      @include Bg;
+    } 
+    }
+    /* ✅ Final de grid-containerREG ✅  */
+  }
+  // ----------------------- 📕Media query Mobile2📕 -----------------------
+
+
+// ----------------------- 📕Media query Mobile3📕 -----------------------
+@media screen and (max-width: 360px) { 
+    /* ✅ Inicio de grid-containerREG ✅  */
+    .grid-containerREG {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        " header header header"
+        " mainREG mainREG mainREG"
+        " footer footer footer";
+        grid-template-rows: 120px 569px 90px;
+        grid-template-columns: 200px;
+    
+  // ---------------🔷🔷Header🔷🔷---------------
+  header{
+      grid-area: header;
+      background-image: url("../Imagenes/HeaderAirTravelMob.png");
+      @include Bg;
+      display: grid;
+      grid-template-areas: 
+      " ColLogo" 
+      " ColEnlaces";
+      grid-template-rows: 3fr 2fr;
+  
+      .ColLogo{
+          grid-area: ColLogo;
+          background-color: map-get($ParteHeader, ColLogo);
+      }
+  
+    .ColEnlaces{
+        grid-area: ColEnlaces;
+        background-color: map-get($ParteHeader, ColEnlaces);
+        display: grid;
+        grid-template-areas: 
+        " SpLink SpLink2 SpLink3";
+        grid-template-columns: 1fr 22fr 1fr;
+
+        .SpLink{
+            grid-area: SpLink;
+            background-color: map-get($ParteHeaderMob, SpLink);
+        }
+
+        .SpLink2{
+            grid-area: SpLink2;
+            background-color: map-get($ParteHeaderMob, SpLink2);
+
+            /* Inicio elementos de menú */
+.Enlaces {
+	display: flex;
+	justify-content: space-evenly;
+  
+  .ElementLi {
+	display: inline;
+  
+  .Link{
+  color: map-get($ColoresLink, TextLink);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  top: 12px;
+  @include TextLink;
+  }
+  
+  .Link:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: map-get($ColoresLink, AnmLink);
+	/*animacion de derecha a izquierda*/
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .Link:hover:after {
+	/*animacion de izquierda a derecha*/
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+}
+}
+/* Final elementos de menú */
+        }
+
+        .SpLink3{
+            grid-area: SpLink3;
+            background-color: map-get($ParteHeaderMob, SpLink3);
+        }
+    }
+  }
+  // ---------------🔷🔷Header🔷🔷---------------
+  
+    .mainREG{
+      grid-area: mainREG;
+      background-image: url("../Imagenes/FondoRegistrarse/FondoRegistrarse.png");
+      @include Bg;
+    }
+    
+    footer{
+        grid-area: footer; 
+        background-image: url("../Imagenes/FooterAirTravelMob.png");
+      @include Bg;
+    } 
+    }
+    /* ✅ Final de grid-containerREG ✅  */
+  }
+  // ----------------------- 📕Media query Mobile3📕 -----------------------
+
+
+
