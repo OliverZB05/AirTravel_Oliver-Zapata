@@ -1,0 +1,293 @@
+//-------------MixinBg------------
+@mixin Bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+//-------------MixinBg------------
+
+//-------------TitulosPrincipales------------
+@mixin TitulosPrincipales {
+    font-size: 50px;
+    font-family: "fuenteC";
+    margin-left: 8px;
+}
+//-------------TitulosPrincipales------------
+
+//-------------TitulosSecundarios------------
+@mixin TitulosSecundarios {
+    font-size: 35px;
+    font-family: "fuenteC";
+    margin-left: 8px;
+}
+//-------------TitulosSecundarios------------
+
+//-------------Text------------
+@mixin Text {
+    font-size: 20px;
+	font-family: "fuenteP";
+}
+//-------------Text------------
+
+//-------------TitulosSecundariosMob------------
+@mixin TitulosSecundariosMob {
+    font-size: 25px;
+    font-family: "fuenteC";
+    margin-left: 8px;
+}
+//-------------TitulosSecundariosMob------------
+
+//-------------TextMob------------
+@mixin TextMob {
+    font-size: 15px;
+	font-family: "fuenteP";
+}
+//-------------TextMob------------
+
+
+//-------------Colores------------
+$ParteHeader:(
+	ColLogo: rgba(149, 17, 189, 0),
+    SpHeader: rgba(161, 161, 161, 0),
+    ColEnlaces: rgba(248, 120, 120, 0)
+);
+
+
+$ParteHeaderMob:(
+	SpLink: rgba(134, 134, 134, 0),
+    SpLink2: rgba(248, 108, 83, 0),
+    SpLink3: rgba(134, 134, 134, 0)
+);
+
+
+$ColoresLink:(
+	TextLink: rgb(0, 0, 0),
+    AnmLink: rgb(7, 89, 241)
+);
+
+$FilasInicio:(
+	FilaTitulo: rgba(87, 87, 87, 0),
+    FilaANM: rgba(150, 150, 150, 0)
+);
+
+$ColsAN:(
+	ColAN1: rgba(240, 51, 51, 0),
+    ColAN2: rgba(248, 149, 149, 0),
+    ColAN3: rgba(240, 51, 51, 0)
+);
+
+$IMG:(
+	IMG1: rgb(189, 7, 245),
+    IMG2: rgb(189, 7, 245)
+);
+
+//-------------𝐂𝐨𝐥𝐨𝐫𝐞𝐬 𝐝𝐞 𝐀𝐥𝐨𝐣𝐚𝐦𝐢𝐞𝐧𝐭𝐨.𝐡𝐭𝐦𝐥------------
+$FilasALJ:(
+	Fila1: rgba(146, 144, 146, 0), 
+    Fila2: rgba(81, 80, 82, 0) 
+);
+
+$Cols:(
+    Col1: rgba(7, 228, 228, 0), 
+    Col2: rgba(177, 177, 177, 0.815),
+    Col3: rgba(7, 228, 228, 0) 
+);
+
+$Col2__SubFilas:(
+    Col2__SubFila1: rgba(5, 182, 29, 0), 
+    Col2__SubFila2: rgba(207, 4, 4, 0), 
+);
+
+$Col2__SubFilasMob:(
+    Col2__SubFilaMob1: rgba(156, 6, 144, 0), 
+    Col2__SubFilaMob2: rgba(255, 72, 246, 0), 
+    Col2__SubFilaMob3: rgba(156, 6, 144, 0), 
+    Col2__SubFilaMob4: rgba(255, 72, 246, 0), 
+);
+
+$SubCols:(
+    SubCol1: rgba(160, 4, 4, 0), 
+    SubCol2: rgba(245, 72, 72, 0), 
+    SubCol3: rgba(160, 4, 4, 0), 
+    SubCol4: rgba(245, 72, 72, 0), 
+);
+
+$Cuadros:(
+    Cuadro: rgb(116, 116, 116)  
+);
+
+$Separaciones:(
+    Separacion1: rgba(141, 141, 141, 0), 
+    Separacion2: rgba(71, 71, 71, 0), 
+);
+
+$BarsHotel:(
+    BarHotel: rgb(228, 226, 226)  
+);
+
+$ColsHotelyColsDatos:(
+    ColHotel: rgba(255, 0, 0, 0),    
+    ColDatos: rgba(211, 211, 211, 0.308), 
+);
+//-------------𝐂𝐨𝐥𝐨𝐫𝐞𝐬 𝐝𝐞 𝐀𝐥𝐨𝐣𝐚𝐦𝐢𝐞𝐧𝐭𝐨.𝐡𝐭𝐦𝐥------------
+
+
+//-------------𝐂𝐨𝐥𝐨𝐫𝐞𝐬 𝐝𝐞 𝐐𝐮𝐢𝐞𝐧𝐞𝐬𝐒𝐨𝐦𝐨𝐬.𝐡𝐭𝐦𝐥------------
+$FilasQU:(
+	TituloQU: rgba(255, 166, 255, 0), 
+    FilaText: rgba(212, 157, 6, 0) 
+);
+
+$FilsDatos:(
+    FilDato1: rgb(3, 196, 19),    
+    FilDato2: rgba(211, 210, 211, 0.678), 
+    FilDato3: rgb(3, 196, 19)   
+);
+//-------------𝐂𝐨𝐥𝐨𝐫𝐞𝐬 𝐝𝐞 𝐐𝐮𝐢𝐞𝐧𝐞𝐬𝐒𝐨𝐦𝐨𝐬.𝐡𝐭𝐦𝐥------------
+//-------------Colores------------
+
+
+
+
+
+//-------------𝐌𝐢𝐱𝐢𝐧𝐬 𝐀𝐥𝐨𝐣𝐚𝐦𝐢𝐞𝐧𝐭𝐨.𝐡𝐭𝐦𝐥------------
+@mixin RadiusTop {                   
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+@mixin RadiusBottom {               
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+@mixin RadiusLeft {               
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+@mixin RadiusRight {               
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+@mixin SubCuadros {               
+    position: relative;
+    left: 120px;
+    top: 40px;
+    border-radius: 50px;
+    height: 120px;
+    width: 200px;
+    background-color: map-get($Cuadros, Cuadro);
+}
+
+@mixin SubCuadrosMob {              
+    height: 130px;
+    width: 260px;
+    position: relative;
+    left: 63px;
+    top: 20px;
+    border-radius: 50px;
+    background-color: map-get($Cuadros, Cuadro);
+}
+
+@mixin SubFilas {                   
+    background-color: rgba(51, 128, 243, 0);
+    border: solid rgba(0, 0, 0, 0) 20px;
+}
+
+@mixin CuadroHotel {                
+    height: 200px;
+    width: 400px;
+    position: relative;
+    left: 60px;
+    top: 25px;
+    border-radius: 50px;
+    background-color: rgba(161, 3, 3, 0);
+}
+
+@mixin CuadroHotelMob {                  
+    height: 170px;
+    width: 330px;
+    position: relative;
+    top: 10px;
+    left: 48px;
+    border-radius: 40px;
+    background-color: rgba(192, 184, 167, 0);
+}
+
+@mixin Separacion1__Text{                  
+    font-size: 30px;
+    position: relative;
+    left: 47px;
+    top: 20px;
+}
+
+@mixin SubsBarsHotel {                  
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 23px;
+    border-radius: 50px;
+    border: solid black 3px;
+    background-color: map-get($BarsHotel, BarHotel);
+}
+
+@mixin SeparacionMob__BarsHotel {      
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 55px;
+    border-radius: 50px;
+    border: solid black 3px;
+    background-color: map-get($BarsHotel, BarHotel);
+}
+
+@mixin TextAlj {                
+    font-family: "fuenteC";
+    color: rgb(0, 0, 0);
+}
+
+@mixin TextDatoMob {                
+    font-family: "fuenteC";
+    position: relative;
+    left: 60px;
+}
+
+@mixin TextDato {               
+    font-family: "fuenteC";
+    position: relative;
+    left: 80px;
+    font-size: 30px;
+}
+
+@mixin TextLink {                
+    font-family: "fuenteC";
+}
+
+@mixin TextLinkMob {               
+    font-family: "fuenteC";
+    font-size: 20px;
+}
+
+@mixin Stars {               
+    height: 60px;
+    width: 200px;
+    position: relative;
+    left: 20px;
+    top: 25px;
+    background-image: url("../Imagenes/ImagenesAlojamientos/IMGStar.png");
+    background-color: rgba(0, 255, 255, 0);
+}
+
+@mixin StarsMob {               
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 30px;
+    top: 22px;
+    background-image: url("../Imagenes/ImagenesAlojamientos/IMGStarMob.png");
+    @include Bg;
+    background-color: rgba(9, 255, 255, 0);
+}
+//-------------𝐌𝐢𝐱𝐢𝐧𝐬 𝐀𝐥𝐨𝐣𝐚𝐦𝐢𝐞𝐧𝐭𝐨.𝐡𝐭𝐦𝐥------------
