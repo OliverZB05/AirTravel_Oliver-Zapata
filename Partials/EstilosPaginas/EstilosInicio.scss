@@ -1,0 +1,791 @@
+// ----------------------- 📘Media query PC📘 -----------------------
+@media screen and (min-width: 1200px) { 
+
+    .main{
+        display: grid;
+        grid-template-areas: 
+        " FilaTitulo FilaTitulo FilaTitulo"
+        " FilaANM FilaANM FilaANM";
+        grid-template-rows: 340px 269px;
+        overflow-y: hidden;
+
+        .FilaTitulo{
+            grid-area: FilaTitulo;
+            background-color: map-get($FilasInicio, FilaTitulo);
+            display: grid;
+            grid-template-areas: 
+            " ColTitulo ColAvion";
+            grid-template-columns: 1fr 1fr;
+
+            .ColTitulo{
+                grid-area: ColTitulo;
+
+                .TituloInicio{
+                    font-size: 75px;
+                    margin-top: 20px;
+                    margin-left: 8px;
+                    font-family: "fuenteV";
+                }
+            }
+
+            .ColAvion{
+                grid-area: ColAvion;
+
+                .IMGVuelo{
+                    position: relative;
+                    left: 10px;
+                    top: 40px;
+                    height: 250px;
+                    width: 250px;
+                    background-image: url("../Imagenes/ImagenesInicio/Avión.png");
+                    @include Bg;
+                }
+
+            /* --------------🌐Animación🌐-------------- */
+            .IMGVuelo:hover {
+                animation: volar 1.5s; 
+                animation-iteration-count: infinite;
+
+            @keyframes volar {
+                0% {
+                    transform: translateX(10px);
+                }
+
+                10% {
+                    transform: translateX(20px);
+                }
+
+                20% {
+                    transform: translateX(35px);
+                }
+
+                40% {
+                    transform: translateX(55px);
+                } 
+
+                50% {
+                    transform: translateX(65px);
+                }
+
+                60% {
+                    transform: translateX(75px);
+                }
+
+                70% {
+                    transform: translateX(85px);
+                } 
+
+                80% {
+                    transform: translateX(95px);
+                } 
+
+                90% {
+                    transform: translateX(105px);
+                } 
+
+                100% {
+                    transform: translateX(120px);
+                } 
+            }
+            }
+            /* --------------🌐Animación🌐-------------- */
+            }
+        }
+
+        .FilaANM{
+            grid-area: FilaANM;
+            background-color: map-get($FilasInicio, FilaANM);
+
+
+            .IMG1{
+                position: relative;
+                left: 10px;
+                top: 10px;
+                height: 250px;
+                width: 250px;
+                background-image: url("../Imagenes/ImagenesInicio/Maletas.png");
+                @include Bg;
+            }
+
+        /* --------------🌐Animación🌐-------------- */
+        .IMG1:hover {
+            animation: batir 0.5s; 
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes batir {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            90% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            } 
+        }
+        /* --------------🌐Animación🌐-------------- */
+        }
+}
+}
+// ----------------------- 📘Media query PC📘 -----------------------
+
+
+
+// ----------------------- 📘Media query PC2📘 -----------------------
+@media screen and (min-width: 768px) { 
+
+    .main{
+        display: grid;
+        grid-template-areas: 
+        " FilaTitulo FilaTitulo FilaTitulo"
+        " FilaANM FilaANM FilaANM";
+        grid-template-rows: 340px 269px;
+        overflow-y: hidden;
+
+        .FilaTitulo{
+            grid-area: FilaTitulo;
+            background-color: map-get($FilasInicio, FilaTitulo);
+            display: grid;
+            grid-template-areas: 
+            " ColTitulo ColAvion";
+            grid-template-columns: 1fr 1fr;
+
+            .ColTitulo{
+                grid-area: ColTitulo;
+
+                .TituloInicio{
+                    font-size: 75px;
+                    margin-top: 20px;
+                    margin-left: 8px;
+                    font-family: "fuenteV";
+                }
+            }
+
+            .ColAvion{
+                grid-area: ColAvion;
+
+                .IMGVuelo{
+                    position: relative;
+                    left: 10px;
+                    top: 40px;
+                    height: 250px;
+                    width: 250px;
+                    background-image: url("../Imagenes/ImagenesInicio/Avión.png");
+                    @include Bg;
+                }
+
+            /* --------------🌐Animación🌐-------------- */
+            .IMGVuelo:hover {
+                animation: volar 1.5s; 
+                animation-iteration-count: infinite;
+
+            @keyframes volar {
+                0% {
+                    transform: translateX(10px);
+                }
+
+                10% {
+                    transform: translateX(20px);
+                }
+
+                20% {
+                    transform: translateX(35px);
+                }
+
+                40% {
+                    transform: translateX(55px);
+                } 
+
+                50% {
+                    transform: translateX(65px);
+                }
+
+                60% {
+                    transform: translateX(75px);
+                }
+
+                70% {
+                    transform: translateX(85px);
+                } 
+
+                80% {
+                    transform: translateX(95px);
+                } 
+
+                90% {
+                    transform: translateX(105px);
+                } 
+
+                100% {
+                    transform: translateX(120px);
+                } 
+            }
+            }
+            /* --------------🌐Animación🌐-------------- */
+            }
+        }
+
+        .FilaANM{
+            grid-area: FilaANM;
+            background-color: map-get($FilasInicio, FilaANM);
+
+
+            .IMG1{
+                position: relative;
+                left: 10px;
+                top: 10px;
+                height: 250px;
+                width: 250px;
+                background-image: url("../Imagenes/ImagenesInicio/Maletas.png");
+                @include Bg;
+            }
+
+        /* --------------🌐Animación🌐-------------- */
+        .IMG1:hover {
+            animation: batir 0.5s; 
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes batir {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            90% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            } 
+        }
+        /* --------------🌐Animación🌐-------------- */
+        }
+}
+}
+// ----------------------- 📘Media query PC2📘 -----------------------
+
+
+// ----------------------- 📕Media query Mobile📕 -----------------------
+@media screen and (max-width: 768px) { 
+
+    .main{
+        display: grid;
+        grid-template-areas: 
+        " FilaTitulo FilaTitulo FilaTitulo"
+        " FilaANM FilaANM FilaANM";
+        grid-template-rows: 490px 279px;
+        overflow-y: scroll;
+
+        .FilaTitulo{
+            grid-area: FilaTitulo;
+            background-color: map-get($FilasInicio, FilaTitulo);
+            display: grid;
+            grid-template-areas: 
+            " ColTitulo" 
+            " ColAvion";
+            grid-template-rows: 1fr 1fr;
+
+            .ColTitulo{
+                grid-area: ColTitulo;
+
+                .TituloInicio{
+                    font-size: 55px;
+                    margin-top: 20px;
+                    margin-left: 9px;
+                    font-family: "fuenteV";
+                }
+            }
+
+            .ColAvion{
+                grid-area: ColAvion;
+
+                .IMGVuelo{
+                    position: relative;
+                    left: 145px;
+                    top: 25px;
+                    height: 190px;
+                    width: 190px;
+                    background-image: url("../Imagenes/ImagenesInicio/Avión.png");
+                    @include Bg;
+                }
+
+            /* --------------🌐Animación🌐-------------- */
+            .IMGVuelo:hover {
+                animation: volar 1.5s; 
+                animation-iteration-count: infinite;
+
+            @keyframes volar {
+                0% {
+                    transform: translateX(10px);
+                }
+
+                10% {
+                    transform: translateX(20px);
+                }
+
+                20% {
+                    transform: translateX(35px);
+                }
+
+                40% {
+                    transform: translateX(55px);
+                } 
+
+                50% {
+                    transform: translateX(65px);
+                }
+
+                60% {
+                    transform: translateX(75px);
+                }
+
+                70% {
+                    transform: translateX(85px);
+                } 
+
+                80% {
+                    transform: translateX(95px);
+                } 
+
+                90% {
+                    transform: translateX(105px);
+                } 
+
+                100% {
+                    transform: translateX(120px);
+                } 
+            }
+            }
+            /* --------------🌐Animación🌐-------------- */
+            }
+        }
+
+        .FilaANM{
+            grid-area: FilaANM;
+            background-color: map-get($FilasInicio, FilaANM);
+
+            .IMG1{
+                position: relative;
+                left: 125px;
+                top: 25px;
+                height: 230px;
+                width: 230px;
+                background-image: url("../Imagenes/ImagenesInicio/Maletas.png");
+                @include Bg;
+            }
+
+            /* --------------🌐Animación🌐-------------- */
+        .IMG1:hover {
+            animation: batir 0.5s; 
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes batir {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            90% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            } 
+        }
+        /* --------------🌐Animación🌐-------------- */
+        }
+
+}   
+}
+// ----------------------- 📕Media query Mobile📕 -----------------------
+
+
+
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+@media screen and (max-width: 576px) { 
+
+    .main{
+        display: grid;
+        grid-template-areas: 
+        " FilaTitulo FilaTitulo FilaTitulo"
+        " FilaANM FilaANM FilaANM";
+        grid-template-rows: 490px 279px;
+        overflow-y: scroll;
+
+        .FilaTitulo{
+            grid-area: FilaTitulo;
+            background-color: map-get($FilasInicio, FilaTitulo);
+            display: grid;
+            grid-template-areas: 
+            " ColTitulo" 
+            " ColAvion";
+            grid-template-rows: 1fr 1fr;
+
+            .ColTitulo{
+                grid-area: ColTitulo;
+
+                .TituloInicio{
+                    font-size: 55px;
+                    margin-top: 20px;
+                    margin-left: 9px;
+                    font-family: "fuenteV";
+                }
+            }
+
+            .ColAvion{
+                grid-area: ColAvion;
+
+                .IMGVuelo{
+                    position: relative;
+                    left: 145px;
+                    top: 25px;
+                    height: 190px;
+                    width: 190px;
+                    background-image: url("../Imagenes/ImagenesInicio/Avión.png");
+                    @include Bg;
+                }
+
+            /* --------------🌐Animación🌐-------------- */
+            .IMGVuelo:hover {
+                animation: volar 1.5s; 
+                animation-iteration-count: infinite;
+
+            @keyframes volar {
+                0% {
+                    transform: translateX(10px);
+                }
+
+                10% {
+                    transform: translateX(20px);
+                }
+
+                20% {
+                    transform: translateX(35px);
+                }
+
+                40% {
+                    transform: translateX(55px);
+                } 
+
+                50% {
+                    transform: translateX(65px);
+                }
+
+                60% {
+                    transform: translateX(75px);
+                }
+
+                70% {
+                    transform: translateX(85px);
+                } 
+
+                80% {
+                    transform: translateX(95px);
+                } 
+
+                90% {
+                    transform: translateX(105px);
+                } 
+
+                100% {
+                    transform: translateX(120px);
+                } 
+            }
+            }
+            /* --------------🌐Animación🌐-------------- */
+            }
+        }
+
+        .FilaANM{
+            grid-area: FilaANM;
+            background-color: map-get($FilasInicio, FilaANM);
+
+            .IMG1{
+                position: relative;
+                left: 125px;
+                top: 25px;
+                height: 230px;
+                width: 230px;
+                background-image: url("../Imagenes/ImagenesInicio/Maletas.png");
+                @include Bg;
+            }
+
+            /* --------------🌐Animación🌐-------------- */
+        .IMG1:hover {
+            animation: batir 0.5s; 
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes batir {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            90% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            } 
+        }
+        /* --------------🌐Animación🌐-------------- */
+        }
+
+}   
+}
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+
+
+
+// ----------------------- 📕Media query Mobile3📕 -----------------------
+@media screen and (max-width: 360px) { 
+
+    .main{
+        display: grid;
+        grid-template-areas: 
+        " FilaTitulo FilaTitulo FilaTitulo"
+        " FilaANM FilaANM FilaANM";
+        grid-template-rows: 490px 279px;
+        overflow-y: scroll;
+
+        .FilaTitulo{
+            grid-area: FilaTitulo;
+            background-color: map-get($FilasInicio, FilaTitulo);
+            display: grid;
+            grid-template-areas: 
+            " ColTitulo" 
+            " ColAvion";
+            grid-template-rows: 1fr 1fr;
+
+            .ColTitulo{
+                grid-area: ColTitulo;
+
+                .TituloInicio{
+                    font-size: 55px;
+                    margin-top: 20px;
+                    margin-left: 9px;
+                    font-family: "fuenteV";
+                }
+            }
+
+            .ColAvion{
+                grid-area: ColAvion;
+
+                .IMGVuelo{
+                    position: relative;
+                    left: 145px;
+                    top: 25px;
+                    height: 190px;
+                    width: 190px;
+                    background-image: url("../Imagenes/ImagenesInicio/Avión.png");
+                    @include Bg;
+                }
+
+            /* --------------🌐Animación🌐-------------- */
+            .IMGVuelo:hover {
+                animation: volar 1.5s; 
+                animation-iteration-count: infinite;
+
+            @keyframes volar {
+                0% {
+                    transform: translateX(10px);
+                }
+
+                10% {
+                    transform: translateX(20px);
+                }
+
+                20% {
+                    transform: translateX(35px);
+                }
+
+                40% {
+                    transform: translateX(55px);
+                } 
+
+                50% {
+                    transform: translateX(65px);
+                }
+
+                60% {
+                    transform: translateX(75px);
+                }
+
+                70% {
+                    transform: translateX(85px);
+                } 
+
+                80% {
+                    transform: translateX(95px);
+                } 
+
+                90% {
+                    transform: translateX(105px);
+                } 
+
+                100% {
+                    transform: translateX(120px);
+                } 
+            }
+            }
+            /* --------------🌐Animación🌐-------------- */
+            }
+        }
+
+        .FilaANM{
+            grid-area: FilaANM;
+            background-color: map-get($FilasInicio, FilaANM);
+
+            .IMG1{
+                position: relative;
+                left: 125px;
+                top: 25px;
+                height: 230px;
+                width: 230px;
+                background-image: url("../Imagenes/ImagenesInicio/Maletas.png");
+                @include Bg;
+            }
+
+            /* --------------🌐Animación🌐-------------- */
+        .IMG1:hover {
+            animation: batir 0.5s; 
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes batir {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+            80% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            90% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            } 
+        }
+        /* --------------🌐Animación🌐-------------- */
+        }
+
+}   
+}
+// ----------------------- 📕Media query Mobile3📕 -----------------------
+
+

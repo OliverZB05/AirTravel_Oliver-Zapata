@@ -1,0 +1,368 @@
+// ----------------------- 📘Media query PC📘 -----------------------
+@media screen and (min-width: 1200px) { 
+    .mainREG{
+    display: grid;
+	grid-template-areas: 
+	" TituloRes"
+    " Form";
+	grid-template-rows: 60px 530px;
+    overflow-y: scroll;
+
+    .TituloRes{
+        grid-area: TituloRes;
+
+    .TituloCon{
+        @include TitulosPrincipales;
+    }
+}
+
+    .Formulario{
+        grid-area: Form;
+
+/* ----⛔Cosas de Form⛔---- */
+.TituloForm {
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	font-family: "fuenteC";
+}
+
+.TituloSecForm{
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-family: "fuenteC";
+	font-weight: bold;
+}
+
+.Bar{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+    border: solid black 3px;
+}
+
+::placeholder{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+}
+
+.options{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+}
+
+.BtEnviar{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: solid black 3px;
+	background-color: rgb(0, 255, 255);
+}
+
+.fieldsetFORM{
+	border: solid black 3px;
+}
+/* ----⛔Cosas de Form⛔---- */
+}
+}
+}
+// ----------------------- 📘Media query PC📘 -----------------------
+
+
+// ----------------------- 📘Media query PC2📘 -----------------------
+@media screen and (min-width: 768px) { 
+    .mainREG{
+    display: grid;
+	grid-template-areas: 
+	" TituloRes"
+    " Form";
+	grid-template-rows: 60px 530px;
+    overflow-y: scroll;
+
+    .TituloRes{
+        grid-area: TituloRes;
+
+    .TituloCon{
+        @include TitulosPrincipales;
+    }
+}
+
+    .Formulario{
+        grid-area: Form;
+
+/* ----⛔Cosas de Form⛔---- */
+.TituloForm {
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	font-family: "fuenteC";
+}
+
+.TituloSecForm{
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-family: "fuenteC";
+	font-weight: bold;
+}
+
+.Bar{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+    border: solid black 3px;
+}
+
+::placeholder{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+}
+
+.options{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+}
+
+.BtEnviar{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: solid black 3px;
+	background-color: rgb(0, 255, 255);
+}
+
+.fieldsetFORM{
+	border: solid black 3px;
+}
+/* ----⛔Cosas de Form⛔---- */
+}
+}
+}
+// ----------------------- 📘Media query PC2📘 -----------------------
+
+
+
+// ----------------------- 📕Media query Mobile📕 -----------------------
+@media screen and (max-width: 768px) { 
+    .mainREG{
+    display: grid;
+	grid-template-areas: 
+	" TituloRes"
+    " Form";
+	grid-template-rows: 60px 530px;
+    overflow-y: scroll;
+
+    .TituloRes{
+        grid-area: TituloRes;
+
+    .TituloCon{
+        font-size: 50px;
+		font-family: "fuenteC";
+    }
+}
+
+    .Formulario{
+        grid-area: Form;
+
+/* ----⛔Cosas de Form⛔---- */
+.TituloForm {
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	font-family: "fuenteC";
+}
+
+.TituloSecForm{
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-family: "fuenteC";
+	font-weight: bold;
+}
+
+.Bar{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+    border: solid black 3px;
+}
+
+::placeholder{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+}
+
+.options{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+}
+
+.BtEnviar{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: solid black 3px;
+	background-color: rgb(0, 255, 255);
+}
+
+.fieldsetFORM{
+	border: solid black 3px;
+}
+/* ----⛔Cosas de Form⛔---- */
+}
+}
+}
+// ----------------------- 📕Media query Mobile📕 -----------------------
+
+
+
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+@media screen and (max-width: 576px) { 
+    .mainREG{
+    display: grid;
+	grid-template-areas: 
+	" TituloRes"
+    " Form";
+	grid-template-rows: 60px 530px;
+    overflow-y: scroll;
+
+    .TituloRes{
+        grid-area: TituloRes;
+
+    .TituloCon{
+        font-size: 50px;
+		font-family: "fuenteC";
+    }
+}
+
+    .Formulario{
+        grid-area: Form;
+
+/* ----⛔Cosas de Form⛔---- */
+.TituloForm {
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	font-family: "fuenteC";
+}
+
+.TituloSecForm{
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-family: "fuenteC";
+	font-weight: bold;
+}
+
+.Bar{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+    border: solid black 3px;
+}
+
+::placeholder{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+}
+
+.options{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+}
+
+.BtEnviar{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: solid black 3px;
+	background-color: rgb(0, 255, 255);
+}
+
+.fieldsetFORM{
+	border: solid black 3px;
+}
+/* ----⛔Cosas de Form⛔---- */
+}
+}
+}
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+
+
+
+
+// ----------------------- 📕Media query Mobile3📕 -----------------------
+@media screen and (max-width: 360px) { 
+    .mainREG{
+    display: grid;
+	grid-template-areas: 
+	" TituloRes"
+    " Form";
+	grid-template-rows: 60px 530px;
+    overflow-y: scroll;
+
+    .TituloRes{
+        grid-area: TituloRes;
+
+    .TituloCon{
+        font-size: 50px;
+		font-family: "fuenteC";
+    }
+}
+
+    .Formulario{
+        grid-area: Form;
+
+/* ----⛔Cosas de Form⛔---- */
+.TituloForm {
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	font-family: "fuenteC";
+}
+
+.TituloSecForm{
+	color: rgb(0, 0, 0);
+	font-size: 17px;
+	font-family: "fuenteC";
+	font-weight: bold;
+}
+
+.Bar{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+	width: 300px;
+	height: 30px;
+    border: solid black 3px;
+}
+
+::placeholder{
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 15px;
+}
+
+.options{
+	color: rgb(0, 0, 0);
+	font-size: 15px;
+}
+
+.BtEnviar{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+	border: solid black 3px;
+	background-color: rgb(0, 255, 255);
+}
+
+.fieldsetFORM{
+	border: solid black 3px;
+}
+/* ----⛔Cosas de Form⛔---- */
+}
+}
+}
+// ----------------------- 📕Media query Mobile3📕 -----------------------
+
+
+

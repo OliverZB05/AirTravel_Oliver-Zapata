@@ -1,0 +1,265 @@
+// ----------------------- 📘Media query PC📘 -----------------------
+@media screen and (min-width: 1200px) { 
+    .mainQU{
+		display: grid;
+		grid-template-areas: 
+		" mainQU__TituloQU"
+		" mainQU__FilaText";
+		grid-template-rows: 60px 929px;
+		overflow-y: scroll;
+
+		&__TituloQU{
+            grid-area: mainQU__TituloQU;
+			background-color: map-get($FilasQU, TituloQU);
+
+			.TituloQU__H1Principal{
+				@include TitulosPrincipales;
+			}
+		}
+
+		&__FilaText{
+			grid-area: mainQU__FilaText;
+			background-color: map-get($FilasQU, FilaText);
+
+			.FilaText__TextQU{
+				@include Text;
+				margin-top: 5px;
+				margin-left: 4px;
+			}
+
+			.TituloSec{
+				@include TitulosSecundarios;
+			}
+
+			.iframePC{
+				margin-left: 5px;
+			}
+
+			.iframeMob{
+				display: none;
+			}
+
+			.FilaText__TextQU2{
+				@include Text;
+				margin-left: 4px;
+			}
+		}
+}
+}
+// ----------------------- 📘Media query PC📘 -----------------------
+
+
+
+// ----------------------- 📘Media query PC2📘 -----------------------
+@media screen and (min-width: 768px) { 
+    .mainQU{
+		display: grid;
+		grid-template-areas: 
+		" mainQU__TituloQU"
+		" mainQU__FilaText";
+		grid-template-rows: 60px 929px;
+		overflow-y: scroll;
+
+		&__TituloQU{
+            grid-area: mainQU__TituloQU;
+			background-color: map-get($FilasQU, TituloQU);
+
+			.TituloQU__H1Principal{
+				@include TitulosPrincipales;
+			}
+		}
+
+		&__FilaText{
+			grid-area: mainQU__FilaText;
+			background-color: map-get($FilasQU, FilaText);
+
+			.FilaText__TextQU{
+				@include Text;
+				margin-top: 5px;
+				margin-left: 4px;
+			}
+
+			.TituloSec{
+				@include TitulosSecundarios;
+			}
+
+			.iframePC{
+				margin-left: 5px;
+			}
+
+			.iframeMob{
+				display: none;
+			}
+
+			.FilaText__TextQU2{
+				@include Text;
+				margin-left: 4px;
+			}
+		}
+}
+}
+// ----------------------- 📘Media query PC2📘 -----------------------
+
+
+
+// ----------------------- 📕Media query Mobile📕 -----------------------
+@media screen and (max-width: 768px) { 
+    .mainQU{
+		display: grid;
+		grid-template-areas: 
+		" mainQU__TituloQU"
+		" mainQU__FilaText";
+		grid-template-rows: 60px 1009px;
+		overflow-y: scroll;
+
+		&__TituloQU{
+            grid-area: mainQU__TituloQU;
+			background-color: map-get($FilasQU, TituloQU);
+
+			.TituloQU__H1Principal{
+				@include TitulosPrincipales;
+			}
+		}
+
+		&__FilaText{
+			grid-area: mainQU__FilaText;
+			background-color: map-get($FilasQU, FilaText);
+
+			.FilaText__TextQU{
+				@include TextMob;
+				margin-top: 5px;
+				margin-left: 4px;
+			}
+
+			.TituloSec{
+				@include TitulosSecundariosMob;
+			}
+
+			.iframePC{
+				display: none;
+			}
+
+			.iframeMob{
+				margin-left: 40px;
+				width: 397px;
+				height: 397px;
+			}
+
+			.FilaText__TextQU2{
+				@include TextMob;
+				margin-left: 4px;
+			}
+		}
+}
+}
+// ----------------------- 📕Media query Mobile📕 -----------------------
+
+
+
+
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+@media screen and (max-width: 576px) { 
+    .mainQU{
+		display: grid;
+		grid-template-areas: 
+		" mainQU__TituloQU"
+		" mainQU__FilaText";
+		grid-template-rows: 60px 1009px;
+		overflow-y: scroll;
+
+		&__TituloQU{
+            grid-area: mainQU__TituloQU;
+			background-color: map-get($FilasQU, TituloQU);
+
+			.TituloQU__H1Principal{
+				@include TitulosPrincipales;
+			}
+		}
+
+		&__FilaText{
+			grid-area: mainQU__FilaText;
+			background-color: map-get($FilasQU, FilaText);
+
+			.FilaText__TextQU{
+				@include TextMob;
+				margin-top: 5px;
+				margin-left: 4px;
+			}
+
+			.TituloSec{
+				@include TitulosSecundariosMob;
+			}
+
+			.iframePC{
+				display: none;
+			}
+
+			.iframeMob{
+				margin-left: 40px;
+				width: 397px;
+				height: 397px;
+			}
+
+			.FilaText__TextQU2{
+				@include TextMob;
+				margin-left: 4px;
+			}
+		}
+}
+}
+// ----------------------- 📕Media query Mobile2📕 -----------------------
+
+
+
+
+// ----------------------- 📕Media query Mobile3📕 -----------------------
+@media screen and (max-width: 360px) { 
+    .mainQU{
+		display: grid;
+		grid-template-areas: 
+		" mainQU__TituloQU"
+		" mainQU__FilaText";
+		grid-template-rows: 60px 1009px;
+		overflow-y: scroll;
+
+		&__TituloQU{
+            grid-area: mainQU__TituloQU;
+			background-color: map-get($FilasQU, TituloQU);
+
+			.TituloQU__H1Principal{
+				@include TitulosPrincipales;
+			}
+		}
+
+		&__FilaText{
+			grid-area: mainQU__FilaText;
+			background-color: map-get($FilasQU, FilaText);
+
+			.FilaText__TextQU{
+				@include TextMob;
+				margin-top: 5px;
+				margin-left: 4px;
+			}
+
+			.TituloSec{
+				@include TitulosSecundariosMob;
+			}
+
+			.iframePC{
+				display: none;
+			}
+
+			.iframeMob{
+				margin-left: 40px;
+				width: 397px;
+				height: 397px;
+			}
+
+			.FilaText__TextQU2{
+				@include TextMob;
+				margin-left: 4px;
+			}
+		}
+}
+}
+// ----------------------- 📕Media query Mobile3📕 -----------------------
